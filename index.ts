@@ -81,16 +81,6 @@ const tileNoise = (x, y, z) => {
   const ty = y % 255;
   const tz = z % 255;
 
-  // const key = [tx, ty, tz].join(',');
-  // const known = cache.get(key);
-  // if (known) {
-  //   return known;
-  // } else {
-  //   const n = noise(tx, ty, tz);
-  //   cache.set(key, n);
-  //   return n;
-  // }
-
   return noise(tx, ty, tz);
 };
 
